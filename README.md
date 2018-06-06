@@ -26,3 +26,9 @@ FIRST TIME DEPLOY
 5. heroku deploys project
     heroku open to open in web browser
 
+FIXING OR ADDING THEN DEPLOYING
+
+1. git status (to check what has changed)
+2. git add .
+3. git commit -m "your message"
+4. git push heroku master
