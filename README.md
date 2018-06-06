@@ -7,3 +7,22 @@ Add
     "node": "8.10.0",
     "npm": "5.6.0"
 },
+
+FIRST TIME DEPLOY
+
+1. create heroku account
+
+2. commit out codebase to git
+    git init
+    git add .
+    git commit -m "initial commit"
+3. install heroku CLI and create app
+    heroku login
+    heroku create
+    it will give you 2 links 
+4. deploy app with git
+    git remote add heroku "2nd link ending with .git"
+    git push heroku master
+5. heroku deploys project
+    heroku open to open in web browser
+
