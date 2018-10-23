@@ -32,3 +32,13 @@ FIXING OR ADDING THEN DEPLOYING
 2. git add .
 3. git commit -m "your message"
 4. git push heroku master
+
+npm run dev to run nodemon
+
+snooplee
+qwer1234
+
+For mLab 
+
+database username: stephenprod
+database password: password123
