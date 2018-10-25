@@ -21,7 +21,7 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: "/auth/google/callback"; //http:localhost:5000/auth/google/callback this will be a route where user will be sent to after google grants permission
+      callbackURL: "/auth/google/callback", //http:localhost:5000/auth/google/callback this will be a route where user will be sent to after google grants permission
       proxy: true
     },
     (accessToken, refreshToken, profile, done) => {
