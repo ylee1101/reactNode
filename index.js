@@ -1,10 +1,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
 const keys = require('./config/keys');
+
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
+
 require("./models/User"); 
+require("./models/Survey");
+
 require("./services/passport");
 
 mongoose.connect(keys.mongoURI);
@@ -29,7 +34,7 @@ app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
-
+require("./routes/surveyRoutes")(app);
 // route handler - frist param is for where to sent the route & second param is something to be executed whenever a request 
 // comes in to this route with this request type (get)
 
