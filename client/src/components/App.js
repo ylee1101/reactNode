@@ -6,8 +6,12 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './Header';
 import Landing from "./Landing";
 
-const DashBoard = () => <h2>DashBoard</h2>;
-const SurveyNew = () => <h2>SurveyNew</h2>;
+import DashBoard from './Dashboard';
+
+import SurveyNew from "./surveys/SurveyNew";
+// Dummy components
+// const DashBoard = () => <h2>DashBoard</h2>;
+// const SurveyNew = () => <h2>SurveyNew</h2>;
 
 
 class App extends Component {
