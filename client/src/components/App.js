@@ -23,7 +23,7 @@ class App extends Component {
         return (
             <div className="container">
                 <BrowserRouter>
-                    <div>
+                    <div className="container">
                     {/* by setting as / it means the root of domain */}
                     <Header />
                     <Route exact path="/" component={Landing} />
